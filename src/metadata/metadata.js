@@ -56,7 +56,7 @@ module.exports = {
       type: 'Master Degree',
       course: 'Computer Science Engineering',
       place: 'Università La Sapienza di Roma',
-      years: "2015 - 2018"
+      years: "2019 - now"
     }
   ]
 };
