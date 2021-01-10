@@ -45,20 +45,20 @@
         {{/each}}
     </div>
 
-    <p>
+    <!-- <p>
         English poet, playwright and actor, widely regarded as the greatest writer in the English language
         and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
         My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
         two long narrative poems and a few other verses, some of uncertain authorship.
-    </p>
+    </p> -->
 
     <h2>Professional Experience</h2>
-    {{#each plays}}
+    {{#each works}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
-
+            <h3>{{ title }} <small>({{place}})</small></h3>
+            <b class="text-muted">{{ role }}</b>
+            <p class="text-muted">{{ years }}</p>
             {{{markdown contents }}}
 
             <div>
@@ -71,14 +71,17 @@
     {{/each}}
 
     <h2>Education</h2>
-    <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
 
-    <h2>Additional Experience</h2>
+    {{#each education}}
+    <p><b>{{type}}</b> in <b>{{course}}</b> at <b>{{place}}</b> [{{years}}]</p>
+    {{/each}}
+
+    <h2>Certifications</h2>
 
     {{#each experience}}
     <div class="card mt-4">
         <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
+            <div class="mb-2"><strong>{{ header }}</strong> - <small>{{auth}}</small></div>
 
             {{{markdown contents }}}
 
