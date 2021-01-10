@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Giovanni Fiordeponti',
-  title: 'Software developer',
+  title: 'Software Developer',
   facts: {
     'Residence': 'Rieti, Italy',
     'Github': `<a href="https://github.com/GiovFiordeponti">
@@ -20,7 +20,9 @@ module.exports = {
     ['CSS', '+++'],
     ['Angular', '+++'],
     ['Python', '+++'],
-    ['SQL', '+++']
+    ['SQL', '+++'],
+    ['C#', '++'],
+    ['.Net Core', '++'],
     ['React', '++'],
     ['Ionic', '++++'],
     ['Firebase', '+++'],
